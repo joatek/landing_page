@@ -1,0 +1,172 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1363DF;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 500px;
+    margin-left: 80px;
+}
+
+nav {
+    font-size: 3.5rem;
+    font-weight: bold;
+    width: 40%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px; 
+    
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: 3.6rem;
+    border-radius: 20px;
+    border: 5px solid #06283D;
+}
+
+#about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #DFF6FF
+}
+
+.about {
+    width: 1800px;
+}
+
+.about h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+    color: rgb(44, 42, 42);
+   
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    color: rgb(44, 44, 44);
+
+}
+
+.about button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #06283D;
+    color:rgb(255, 255, 255);
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.about button:hover {
+    background-color: #1363DF;
+}
+
+.image {
+    padding: 50px 0 50px 0;
+}
+
+.image img {
+    width: 1800px;
+}
+
+#boards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #06283D;
+}
+
+#boards h2 {
+    font-size: 6rem;
+}
+
+#boards p {
+    font-size: 3rem;
+}
+
+.board-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.board-img div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.board-img img {
+    border: 5px solid #1363DF;
+    padding: 10px;
+    border-radius: 50px
+}
+
+@media (max-width: 4200px) {
+    .board-img {
+        flex-wrap: wrap;
+    } 
+}
+
+@media (max-width: 3800px) {
+    #about {
+        flex-direction: column;
+    }
+   
+}
+
+@media (max-width: 2600px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%
+    }
+    .logo {
+        margin-left: 0;
+    }
+    
+}
+
+
+@media (max-width: 2000px) {
+    .about {
+        width: 1200px;
+    }
+    .image img {
+        width: 1200px;
+    }
+}
