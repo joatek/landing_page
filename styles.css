@@ -13,14 +13,14 @@ header {
 }
 
 .logo {
-    width: 500px;
+    width: 200px;
     margin-left: 80px;
 }
 
 nav {
-    font-size: 3.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    width: 40%;
+    width: 40vw;
 }
 
 nav ul {
@@ -36,15 +36,14 @@ nav li {
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 20px; 
+    padding: 5px; 
     
 }
 
 a:hover {
     font-weight: bold;
-    font-size: 3.6rem;
-    border-radius: 20px;
-    border: 5px solid #06283D;
+    border-radius: 10px;
+    border: 2px solid #06283D;
 }
 
 #about {
@@ -55,12 +54,12 @@ a:hover {
 }
 
 .about {
-    width: 1800px;
+    width: 40vw;
 }
 
 .about h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10rem;
+    font-size: 2.5rem;
     padding: 0;
     margin: 0;
     color: rgb(44, 42, 42);
@@ -69,7 +68,7 @@ a:hover {
 
 .about p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
     color: rgb(44, 44, 44);
@@ -78,12 +77,12 @@ a:hover {
 
 .about button {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    padding: 20px;
-    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 5px;
     background-color: #06283D;
     color:rgb(255, 255, 255);
-    margin-top: 80px;
+    margin-top: 15px;
     font-weight: bold;
 }
 
@@ -92,11 +91,11 @@ a:hover {
 }
 
 .image {
-    padding: 50px 0 50px 0;
+    padding: 10px 0 10px 0;
 }
 
 .image img {
-    width: 1800px;
+    width: 40vw;
 }
 
 #boards {
@@ -104,16 +103,15 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     color: #06283D;
 }
 
 #boards h2 {
-    font-size: 6rem;
+    font-size: 2rem;
 }
 
 #boards p {
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
 .board-img {
@@ -130,12 +128,47 @@ a:hover {
 }
 
 .board-img img {
-    border: 5px solid #1363DF;
-    padding: 10px;
-    border-radius: 50px
+    border: 2px solid #1363DF;
+    padding: 5px;
+    border-radius: 20px;
+    width: 15vw;
 }
 
-@media (max-width: 4200px) {
+#quotes {
+    background-color: #01AAC1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#quotes .container {
+    width: 30vw;
+    color: rgb(183, 255, 0);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8))
+}
+
+.quote p {
+    font-family: 'Tiro Telugu', serif;
+    font-size: 1.5rem;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.author p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+/* @media (max-width: 4200px) {
     .board-img {
         flex-wrap: wrap;
     } 
@@ -169,4 +202,4 @@ a:hover {
     .image img {
         width: 1200px;
     }
-}
+} */
